@@ -1,5 +1,5 @@
 const { By, Builder, Browser } = require('selenium-webdriver');
-const edge = require('selenium-webdriver/edge');
+
 
 (async function firstTest() {
   let driver;
@@ -42,13 +42,16 @@ const edge = require('selenium-webdriver/edge');
   ]
 
   try {
-    let options = new edge.Options();
-    options.setBinaryPath("/mnt/c/Users/B16860/AppData/Local/Microsoft/Edge/web_driver/msedgedriver.exe")
-    driver = await new Builder().forBrowser(Browser.EDGE).setEdgeOptions(options.addArguments("--no-sandbox")).build();
-    await driver.get('https://eu2.concursolutions.com/nui/expense/report/E842B8482BE044B8BBF3');
-    await driver.manage().setTimeouts({ implicit: 3000 });
+    // let options = new chrome.Options();
+    driver = await new Builder().forBrowser(Browser.CHROME).build();
+    // await new Promise(r => setTimeout(r, 10000));
+    // await driver.manage().setTimeouts({ implicit: 3000 });
+    await driver.get('https://www.selenium.dev/selenium/web/web-form.html')
+    // await driver.get('https://eu2.concursolutions.com/nui/expense/report/E842B8482BE044B8BBF3');
 
-    await new Promise(r => setTimeout(r, 20000));
+
+
+    // await new Promise(r => setTimeout(r, 5000));
 
     // for (let index = 0; index < upload_dates.length; index++) {
     //   const upload_dt_i = upload_dates[index];
