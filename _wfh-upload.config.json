@@ -1,0 +1,9 @@
+{
+  "ENTRY_URL": "<talent2grow_home_page>",
+  "BROWSER_PATH": "C:\\Users\\<user_folder>\\<sub_path_chrome_exe>",
+  "WEB_DRIVER_PATH": "C:\\Users\\<user_foler>\\<sub_path_chrome_web_driver>",
+  "UPLOAD_DATES": [
+    "01/07/2025",
+    "03/07/2025"
+  ]
+}
