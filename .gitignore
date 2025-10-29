@@ -1,1 +1,9 @@
 .venv
+
+.npmrc
+node_modules
+package-lock.json
+
+wfh-upload.config.json
+
+reistransacties.xls
