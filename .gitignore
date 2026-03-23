@@ -4,4 +4,5 @@ package-lock.json
 
 extract_dates.config.json
 extract_dates.out
-data/*
+
+reistransacties*.xls
